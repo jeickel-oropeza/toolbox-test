@@ -6,7 +6,7 @@ const { getExternalFiles, getExternalFile } = require('../utils/utils');
 // Endpoint to get files data
 router.get('/data', async (req, res, next) => {
 	let fileList = []
-	if(req.query.fileName) {
+	if (req.query.fileName) {
 		let fileResponse = await getExternalFile(req.query.fileName);
 		fileList.push(fileResponse)
 	} else {
@@ -14,7 +14,7 @@ router.get('/data', async (req, res, next) => {
 		for (let i = 0; i < externalFiles.length; i++) {
 			let fileResponse = await getExternalFile(externalFiles[i]);
 			if (fileResponse !== null) {
-				if(fileResponse.file !== '') {
+				if (fileResponse.file !== '') {
 					fileList.push(fileResponse)
 				}
 			}
