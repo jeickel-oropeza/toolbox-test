@@ -11,3 +11,13 @@ export const GetFileList = async () => {
 		console.log(error)
 	} 
 }
+
+export const GetFile = async (name) => {
+	try {
+		let response = await axios.get(`${apiUrl}/files/data?fileName=${name}`)
+		response = formatResponse(response.data)
+		return response
+	} catch (error) {
+		console.log(error)
+	} 
+}
