@@ -48,3 +48,69 @@ Una vez instaladas las dependencias debe ejecutar el comando:
 ```
 
 La aplicación se ejecuta en la siguiente ruta: http://localhost:3011/
+
+
+## Rest API
+Endpoint: ***/files/data***
+
+Ejemplo de respuesta:
+```bash
+  [
+    {
+      "file": "test2.csv",
+      "lines": [
+        {
+          "text": "KNSSDVeCtpbUbdcED",
+          "number": "4509",
+          "hex": "ee53c8c1a295d9cb912582ad2f323882"
+        }
+      ]
+    },
+    {
+      "file": "test3.csv",
+      "lines": [
+        {
+          "text": "IcbuPIFOiPuSwqJyhgSmyW",
+          "number": "6004614076",
+          "hex": "ee5b8220d041ee32923ce3406763995a"
+        },
+      ]
+    }
+  ]
+```
+
+Endpoint: ***/files/data?fileName=name***
+
+Ejemplo de respuesta:
+```bash
+  [
+    {
+      "file": "test2.csv",
+      "lines": [
+        {
+          "text": "KNSSDVeCtpbUbdcED",
+          "number": "4509",
+          "hex": "ee53c8c1a295d9cb912582ad2f323882"
+        }
+      ]
+    }
+  ]
+```
+
+Endpoint: ***/files/list***
+
+Ejemplo de respuesta:
+```bash
+
+  [
+	"test1.csv",
+	"test2.csv",
+	"test3.csv",
+	"test18.csv",
+	"test4.csv",
+	"test5.csv",
+	"test6.csv",
+	"test9.csv",
+	"test15.csv"
+]
+```
