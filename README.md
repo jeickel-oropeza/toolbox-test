@@ -21,7 +21,7 @@ Para ejecutar la api debe dirigirse a la carpeta ***/api***:
 ```
 Dentro del directorio ***/api*** ejecutar el siguiente comando:
 ```bash
-  COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
+  docker-compose build
 ```
 Una vez finalice la ejecución del comando anterior se procede a ejecutar el siguiente:
 ```bash
