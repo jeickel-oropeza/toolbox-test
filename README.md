@@ -10,6 +10,11 @@ Clonar el repositorio:
   git clone https://github.com/jeickel-oropeza/toolbox-test.git
 ```
 
+Dirigirse a la carpeta ***/toolbox-test***:
+```bash
+  cd /toolbox-test
+```
+
 Para ejecutar la api debe dirigirse a la carpeta ***/api***:
 ```bash
   cd /api
